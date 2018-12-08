@@ -18,6 +18,15 @@ public class HelloController {
 //        return "index";
 //    }
 
+
+    @ResponseBody
+    @RequestMapping("/helloWorld")
+    public  String helloWorld(@RequestParam("user") String user){
+        return "hello world!!!";
+    }
+
+
+
     @ResponseBody
     @RequestMapping("/hello")
     public  String hello(@RequestParam("user") String user){
